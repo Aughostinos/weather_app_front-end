@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" id="homeLink">Home</a>
+                <a href="#" id="signInLink">Sign In</a>
+                <a href="#" id="signUpLink">Sign Up</a>
+                <a href="#" id="validateZipLink">Validate Zip Code</a>
+                <a href="#" id="getHelpLink">Get Help</a>
+                <input type="text" placeholder="Enter Zip Code" id="searchZip">
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="content">
+                <div id="home" class="page">
+                    <div class="weather-form">
+                        <h2>Check Weather</h2>
+                        <input type="text" id="zipCode" placeholder="Enter Zip Code">
+                        <button id="getWeather">Get Weather</button>
+                        <div id="weatherResult"></div>
+                    </div>
+
+                    <div class="feedback-form">
+                        <h2>Submit Feedback</h2>
+                        <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+                        <button id="submitFeedback">Submit Feedback</button>
+                        <div id="feedbackResult"></div>
+                    </div>
+                </div>
+
+                <div id="signIn" class="page">
+                    <h2>Sign In</h2>
+                    <input type="email" id="signInEmail" placeholder="Email">
+                    <input type="password" id="signInPassword" placeholder="Password">
+                    <button id="signInButton">Sign In</button>
+                    <div id="signInResult"></div>
+                </div>
+
+                <div id="signUp" class="page">
+                    <h2>Sign Up</h2>
+                    <input type="text" id="signUpUsername" placeholder="Username">
+                    <input type="email" id="signUpEmail" placeholder="Email">
+                    <input type="password" id="signUpPassword" placeholder="Password">
+                    <button id="signUpButton">Sign Up</button>
+                    <div id="signUpResult"></div>
+                </div>
+
+                <div id="validateZip" class="page">
+                    <h2>Validate Zip Code</h2>
+                    <input type="text" id="zipCodeValidate" placeholder="Enter Zip Code">
+                    <button id="validateZipButton">Validate</button>
+                    <div id="validateZipResult"></div>
+                </div>
+
+                <div id="getHelp" class="page">
+                    <h2>Get Help</h2>
+                    <p>To find your zip code, you can:</p>
+                    <ul>
+                        <li>Check your postal mail.</li>
+                        <li>Visit your national postal service website.</li>
+                        <li>Ask a neighbor or local business.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Weather Journal App | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a
+                    href="#">Contact Us</a></p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
