@@ -21,7 +21,7 @@ $(document).ready(function () {
         $('.page').removeClass('active');
         $('#' + pageId).addClass('active');
     }
-
+    
     // Initially show the home page
     showPage('home');
 
@@ -89,8 +89,8 @@ $(document).ready(function () {
                 method: 'POST',
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"
-                  },
-                body: JSON.stringify({ email:email, password:password })
+                },
+                body: JSON.stringify({ email: email, password: password })
             });
             const data = await response.json();
 
@@ -119,7 +119,7 @@ $(document).ready(function () {
                 method: 'POST',
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"
-                  },
+                },
                 body: JSON.stringify({ username, email, password })
             });
             const data = await response.json();
