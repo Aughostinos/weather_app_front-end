@@ -1,4 +1,4 @@
-backend_url = "https://weather-journal-app-gamma.vercel.app";
+backend_url = "https://weather-app-eight-theta-54.vercel.app";
 $(document).ready(function () {
     // Navigation
     $('#homeLink').click(function () {
