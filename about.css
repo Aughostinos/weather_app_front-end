@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -34,7 +34,7 @@ header button {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    font-size: 1.1em;
+    font-size: 1.7em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -47,6 +47,18 @@ main {
     margin-top: 80px;
     padding: 20px;
 }
+.banner {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 .landing {
     text-align: center;
@@ -73,6 +85,7 @@ main {
 }
 
 .features h2 {
+    text-align: left;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -89,23 +102,32 @@ main {
     border-radius: 5px;
 }
 
-.feature-block p {
-    width: 50%;
-    padding: 20px;
-    font-size: 1.2em;
+.feature-block.left {
+    flex-direction: row;
 }
 
-.feature-block.reverse {
+.feature-block.right {
     flex-direction: row-reverse;
 }
 
+.feature-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.feature-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    font-size: 1.2em;
+}
 footer {
     background: white;
     color: #4682b4;
     padding: 10px;
-    margin-top: 20px;
     text-align: center;
-    /*position: fixed;*/
     width: 100%;
     bottom: 0;
 }
