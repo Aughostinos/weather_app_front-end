@@ -40,7 +40,7 @@ header nav a {
 .logo-container {
     display: flex;
     align-items: center;
-    margin-right: auto; /* Align button to the right */
+    margin-right: auto;
 }
 
 .logo-container img {
